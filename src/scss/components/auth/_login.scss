@@ -1,0 +1,28 @@
+@import '../../variables';
+
+.login-section {
+    width: 100%;
+    position: relative;
+};
+
+.login-component-section {
+    position: relative;
+    width: 50%;
+    margin:40px auto;
+};
+
+.login-form-component{
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $gray-color;
+    background: $white-color;
+};
+
+.auth-links{
+   width: 100%;
+};
+
+.auth-link{
+    margin-left: 10px;
+}

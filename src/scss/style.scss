@@ -1,0 +1,17 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import CoreUI styles
+@import "~@coreui/coreui/scss/coreui.scss";
+
+// If you want to add something do it here
+@import "custom";
+
+
+@import './components/auth/login';
+@import './components/auth/signup';
+@import './components/shared/brandcrd';
+@import './components/shared/vehiclecrd';
+@import './components/shared/order-card';
+@import './components/forms/add-brand';
+@import './components/forms/add-vehicle';

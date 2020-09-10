@@ -1,0 +1,33 @@
+@import '../../variables';
+
+.order-card {
+    width:100%;
+    margin: 6px 0px;
+};
+
+.order-card-root {
+    width: 100%;
+    display: flex !important;
+};
+
+.order-card-cover {
+    width: 40%;
+    
+};
+
+.order-card-cover-preloader{
+    width: 100%;
+    height: 210px;
+    background: $gray-color;
+};
+
+.order-card-cover-img{
+    width: 100%;
+    height: 210px;
+}
+
+.order-card-details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+};
