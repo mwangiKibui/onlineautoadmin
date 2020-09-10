@@ -31,7 +31,7 @@ const OrderCard  = ({data}) => {
                         <p className="order-card-text">
                             On {new Date(data.createdAt).toLocaleDateString()}
                         </p>
-                        <a href={`${url}${data.invoice}`} ref="noopener noreferrer" className="btn btn-success">
+                        <a href={`${url}${data.invoice}`}  className="btn btn-success">
                             view invoice
                         </a>
                     </CardContent>
