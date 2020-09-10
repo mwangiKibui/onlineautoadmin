@@ -1,0 +1,29 @@
+@import '../../variables';
+
+.dashboard-brand{
+    width: 100%;
+    margin: 10px 0px;
+};
+
+.dashboard-brand-content{
+    width: 50%;
+    margin: 10px auto;
+    background: $white-color;
+    border: 1px solid $gray-color;
+    padding: 10px;
+};
+
+.dashboard-brand-content-img{
+    width: 100%;
+    margin: 10px auto;
+};
+
+.dashboard-logo-img{
+    width: 100%;
+    height: 200px;
+};
+
+.dashboard-brand-content-details{
+    width: 50%;
+    margin: 10px auto;
+}

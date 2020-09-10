@@ -5,6 +5,7 @@ import {Card,CardContent,CardActions,IconButton} from '@material-ui/core';
 import {Delete} from '@material-ui/icons';
 import {ScaleLoader} from 'react-spinners';
 import {useDispatch} from 'react-redux';
+import {Link} from 'react-router-dom';
 //components
 import url from '../../utils/url';
 import {deleteVehicle} from '../../store/vehicles';
@@ -30,7 +31,9 @@ const VehicleCard = ({data}) => {
             alt=""
             />
             <CardContent>
-                <h4 className="vehicle-card-name">{data.name}</h4>
+                <div className="vehicle-card-details">
+                <Link to={`/vehicle/${data.slug}`} className="vehicle-card-name">{data.name}</Link>
+                </div>
                 <CardActions className="vehicle-card-actions">
                     <IconButton onClick={ () => removeVehicle(data.slug)}>
                         <Delete />

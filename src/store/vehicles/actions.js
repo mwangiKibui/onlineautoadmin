@@ -22,4 +22,9 @@ export const setAddVehicle = message => ({
 export const setError = message => ({
     type:types.VEHICLE_ERROR,
     payload:message
-})
+});
+
+export const setVehicle = data => ({
+    type:types.VEHICLE,
+    payload:data
+});

@@ -11,9 +11,18 @@
     height: 100px;
 };
 
-.brand-card-name{
+.brand-card-details{
     width: 100%;
     text-align: center;
+}
+
+.brand-card-name{
+    color: $black-color;
+    text-decoration:none;
+    &:hover{
+        color: $black-color;
+        text-decoration: none;
+    }
 };
 
 .brand-card-actions{

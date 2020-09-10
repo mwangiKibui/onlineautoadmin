@@ -52,4 +52,15 @@ export const addBrand = data => async dispatch => {
 
     .catch(console.log);
 
-}
+};
+
+//fetching brand
+export const fetchBrand = name => async dispatch => {
+    dispatch(actions.setLoading());
+
+    await axios.get(`${url}/get/${name}`)
+
+    .then(res => dispatch(actions.setBrand(res.data.message)))
+
+    .catch(console.log);
+};

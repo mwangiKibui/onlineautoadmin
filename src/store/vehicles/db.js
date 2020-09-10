@@ -49,4 +49,16 @@ export const addVehicle = data => async dispatch => {
     })
 
     .catch(console.log);
-}
+};
+
+//fetching a vehicle
+export const fetchVehicle = slug => async dispatch => {
+    dispatch(actions.setLoading());
+
+    await axios.get(`${url}/fetch/${slug}`)
+
+    .then(res => dispatch(actions.setVehicle(res.data.message)))
+
+    .catch(console.log);
+
+};

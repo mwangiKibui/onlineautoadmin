@@ -4,7 +4,8 @@ const initial_state = {
     loading:false,
     vehicles:[],
     message:'',
-    error:''
+    error:'',
+    vehicle:{}
 };
 
 export default (state = initial_state,action) => {
@@ -38,6 +39,12 @@ export default (state = initial_state,action) => {
                 ...state,
                 loading:false,
                 error:action.payload
+            };
+        case types.VEHICLE:
+            return {
+                ...state,
+                loading:false,
+                vehicle:action.payload
             }
         default:
             return {

@@ -22,4 +22,9 @@ export const setAddBrand = message => ({
 export const setBrandError = error => ({
     type:types.BRAND_ERROR,
     payload:error
-})
+});
+
+export const setBrand = data => ({
+    type:types.BRAND,
+    payload:data
+});

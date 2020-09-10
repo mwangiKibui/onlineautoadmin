@@ -10,9 +10,18 @@
     height: 150px;
 };
 
-.vehicle-card-name{
+.vehicle-card-details{
     width: 100%;
     text-align: center;
+}
+
+.vehicle-card-name{
+    text-decoration:none;
+    color: $black-color;
+    &:hover{
+        text-decoration:none;
+        color: $black-color;
+    }
 };
 
 .vehicle-card-actions{

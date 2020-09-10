@@ -12,8 +12,10 @@ import {
 
 import Dashboard from '../views/dashboard';
 import Brands from '../views/brands';
+import Brand from '../views/brands/brand';
 import AddBrand from '../views/brands/add-brand';
 import Vehicles from '../views/vehicles';
+import Vehicle from '../views/vehicles/vehicle';
 import AddVehicle from '../views/vehicles/add-vehicle';
 import Invoices from '../views/purchased-orders';
 import {decode} from '../store/user';
@@ -67,8 +69,10 @@ const TheLayout = () => {
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/brands" component={Brands} />
               <Route exact path="/brands/add" component={AddBrand} />
+              <Route exact path="/brand/:brand" component={Brand} />
               <Route exact path="/vehicles" component={Vehicles} />
               <Route exact path="/vehicles/add" component={AddVehicle} />
+              <Route exact path="/vehicle/:slug" component={Vehicle} />
               <Route exact path="/purchased-orders" component={Invoices} />
             </Switch>
             )

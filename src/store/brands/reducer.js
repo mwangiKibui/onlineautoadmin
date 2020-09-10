@@ -4,7 +4,8 @@ const initial_state = {
     loading:false,
     brands:[],
     message:'',
-    error:''
+    error:'',
+    brand:{}
 };
 
 export default (state = initial_state,action) => {
@@ -39,6 +40,12 @@ export default (state = initial_state,action) => {
                 ...state,
                 loading:false,
                 error:action.payload
+            };
+        case types.BRAND:
+            return {
+                ...state,
+                loading:false,
+                brand:action.payload
             }
         default:
             return {

@@ -5,6 +5,7 @@ import {Card,CardContent,CardActions,IconButton} from '@material-ui/core';
 import {Delete} from '@material-ui/icons';
 import {useDispatch} from 'react-redux';
 import {ScaleLoader} from 'react-spinners';
+import {Link} from 'react-router-dom';
 //components
 import url from '../../utils/url';
 import {deleteBrand} from '../../store/brands';
@@ -30,7 +31,9 @@ const BrandCard = ({data}) => {
             alt=""
             />
             <CardContent>
-                <h4 className="brand-card-name">{data.name}</h4>
+                <div className="brand-card-details">
+                <Link to={`/brand/${data.name}`} className="brand-card-name">{data.name}</Link>
+                </div>
                 <CardActions className="brand-card-actions">
                     <IconButton onClick={ () => removeBrand(data.name)}>
                         <Delete />
